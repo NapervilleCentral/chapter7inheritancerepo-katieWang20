@@ -4,7 +4,8 @@
 //  Represents an Animal.
 //********************************************************************
 
-public  abstract class Animal
+
+public abstract class Animal
 {
    private String type;
    
@@ -36,6 +37,9 @@ public  abstract class Animal
     /**-----------------------------------------------------------------
     * This method should return a string indicating how this pet moves.
    /*/
+   //abstract method
+   // you have to write how the animal moves yourself so it's an abstract method
+   
    abstract public String move();
 
 
