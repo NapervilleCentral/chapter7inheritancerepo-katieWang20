@@ -7,8 +7,8 @@
 public abstract class Reptile extends Animal
 {
    private int numberOfLegs;
-
-
+    //protected - lets any child class access variable, but not anybody else
+   protected boolean poisonous;
    /**-----------------------------------------------------------------
    *  Creates a reptile with no Legs.
    */

@@ -7,7 +7,11 @@
 public class Snake extends Reptile
 {
    private int length;
-
+   
+   public Snake(){
+    ;
+    
+    }
    //-----------------------------------------------------------------
    // Creates a snake with the given name and length.
    //-----------------------------------------------------------------

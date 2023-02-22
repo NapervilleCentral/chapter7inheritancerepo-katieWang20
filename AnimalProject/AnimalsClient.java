@@ -19,9 +19,12 @@ public class AnimalsClient
 
         
 
-       
-       
-       
+        //Snake toString is called       
+        Snake putin = new Snake (24);
+        System.out.println(putin);
+        
+        Cobra me = new Cobra(22);
+        me.bite(putin);
      /*
      /*
      */

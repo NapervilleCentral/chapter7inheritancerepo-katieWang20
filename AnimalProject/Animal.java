@@ -8,13 +8,13 @@
 public abstract class Animal
 {
    private String type;
-   
-
+   protected boolean poisoned = false;;
+    
     public Animal()
     {//this is called by default
         type = "Default";
         
-        System.out.println("hello from Animal Default"  );
+        //System.out.println("hello from Animal Default"  );
     }
    /**-----------------------------------------------------------------
    *  Creates a Animal with the given type.
@@ -23,7 +23,7 @@ public abstract class Animal
    {
       type = animalType;
       
-      System.out.println("hello from Animal");
+      //System.out.println("hello from Animal");
    }
 
    /**-----------------------------------------------------------------
@@ -39,10 +39,10 @@ public abstract class Animal
    /*/
    //abstract method
    // you have to write how the animal moves yourself so it's an abstract method
-   
+   //abtract classes have functionality, interfaces don't
    abstract public String move();
-
-
+   
+   
 
    /**-----------------------------------------------------------------
    * Returns a string representation of this Animal.
@@ -50,7 +50,13 @@ public abstract class Animal
    public String toString()
    {
       String data = "My type is " + type;
-      
+      if (poisoned == true){
+            data+= " and I am poisoned";
+        
+        }else{
+            data += " and I am not poisoned W";
+        
+        }
         
       return data;  
         
