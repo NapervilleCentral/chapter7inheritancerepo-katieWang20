@@ -25,6 +25,12 @@ public class AnimalsClient
         
         Cobra me = new Cobra(22);
         me.bite(putin);
+        
+        Secretary_Bird secretary = new Secretary_Bird ("white", 30.3, true);
+        
+        me.bite(secretary);
+       // System.out.println(secretary);
+        
      /*
      /*
      */

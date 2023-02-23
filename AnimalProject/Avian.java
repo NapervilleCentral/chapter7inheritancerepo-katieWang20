@@ -5,19 +5,31 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public abstract class Avian
+public abstract class Avian extends Animal
 {
     // instance variables - replace the example below with your own
     private int x;
-    boolean fly;
+    boolean canFly;
+    boolean isFlying;
+    String color;
+    double wingspan;
+    
     
     /**
      * Constructor for objects of class Avian
      */
-    public Avian()
+    public Avian(String color, double wingspan, boolean canFly)
     {
-        // initialise instance variables
-        x = 0;
+        super("bird");
+        
+        this.color = color;
+        this.wingspan = wingspan;
+        this.canFly = canFly;        
+        
+    }
+    
+    public void fly(){
+        System.out.println("I am flying");
     }
 
 
