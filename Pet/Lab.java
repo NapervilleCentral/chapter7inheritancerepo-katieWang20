@@ -14,7 +14,7 @@ public class Lab extends Dog
 
     /**
      * Constructor for objects of class Lab
-     */
+ */
     public Lab(int DogWeight, String LabColor, String DogName)
     {
         
@@ -25,7 +25,7 @@ public class Lab extends Dog
     }
     public String toString()
     {
-        retrun (super.toString() + "and is a "+ color + " labrador");
+        return (super.toString() + "and is a "+ color + " labrador");
     }
 
 }

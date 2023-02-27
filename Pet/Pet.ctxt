@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Pet
+comment1.params=
+comment1.target=Pet()
+comment2.params=petName
+comment2.target=Pet(java.lang.String)
+comment2.text=-----------------------------------------------------------------\r\n\ \ Creates\ a\ pet\ with\ the\ given\ name.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=-----------------------------------------------------------------\r\n\ \ Returns\ this\ pet's\ name.\r\n/
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=-----------------------------------------------------------------\r\n\ Returns\ a\ string\ representation\ of\ this\ pet.\r\n/
+comment5.params=
+comment5.target=java.lang.String\ speak()
+comment5.text=-----------------------------------------------------------------\r\n\ This\ method\ should\ return\ a\ string\ indicating\ what\ this\ pet\ says.\r\n/
+comment6.params=
+comment6.target=java.lang.String\ move()
+comment6.text=-----------------------------------------------------------------\r\n\ This\ method\ should\ return\ a\ string\ indicating\ how\ this\ pet\ moves.\r\n/
+numComments=7

@@ -8,11 +8,11 @@ public abstract class Pet
 {
    private String name;
 
-	public Pet()
-	{//this is called by default
-		name = "Default";
-		System.out.println("hello from Pet"  );
-	}
+    public Pet()
+    {//this is called by default
+        //name = "Default";
+        //System.out.println("hello from Pet"  );
+    }
    /**-----------------------------------------------------------------
    *  Creates a pet with the given name.
    */
