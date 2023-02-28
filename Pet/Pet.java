@@ -7,7 +7,8 @@
 public abstract class Pet
 {
    private String name;
-
+     protected String species;
+    
     public Pet()
     {//this is called by default
         //name = "Default";
@@ -16,12 +17,17 @@ public abstract class Pet
    /**-----------------------------------------------------------------
    *  Creates a pet with the given name.
    */
+  
+    
    public Pet(String petName)
    {
       name = petName;
+      
       //System.out.println("hello from Pet");
    }
-
+    public String getSpecies(){
+        return species;
+    }
    /**-----------------------------------------------------------------
    *  Returns this pet's name.
    /*/

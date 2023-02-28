@@ -27,7 +27,7 @@ public class Dog extends Pet
     }
     
     public String move(){
-        return "I am walking with four legs";
+        return "walking";
     
     }
    

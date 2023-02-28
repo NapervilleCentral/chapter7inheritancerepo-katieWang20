@@ -14,19 +14,19 @@ public class Cat extends Pet
      * Constructor for objects of class Cat
      */
     
-    public Cat(String name)
+    public Cat(String name, String mood)
     {
         // initialise instance variables
         super(name);
-        this.mood = "upset";
+        this.mood = mood;
     }
     
     public String speak(){
-        return "meow owo" ;
+        return "meow" ;
     }
 
     public String move(){
-        return "I am moving (I am a cat)";
+        return "strutting";
     }
     
     public String toString(){
