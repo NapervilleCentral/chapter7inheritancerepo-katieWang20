@@ -54,6 +54,8 @@ public abstract class Pet
    * This method should return a string indicating how this pet moves.
    /*/
    abstract public String move();
+   
+   
 }
 
 

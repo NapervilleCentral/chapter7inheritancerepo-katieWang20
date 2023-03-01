@@ -10,7 +10,7 @@ public class Iguana extends Pet
     // instance variables - replace the example below with your own
     private String color;
     private double length;
-    protected String species = "iguana";
+    //protected String species = "iguana";
     /**
      * Constructor for objects of class Iguana
      */
@@ -20,6 +20,8 @@ public class Iguana extends Pet
         super(name);
         this.color = color;
         this.length = length;
+        species = "iguana";
+        
     }
 
     /**
@@ -40,4 +42,5 @@ public class Iguana extends Pet
     public String toString(){
         return super.toString() + " and my length in inches is " + length + " and I am the color " + color;
     }
+    
 }

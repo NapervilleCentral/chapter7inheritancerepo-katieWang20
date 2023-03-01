@@ -19,6 +19,7 @@ public class Cat extends Pet
         // initialise instance variables
         super(name);
         this.mood = mood;
+        species = "cat";
     }
     
     public String speak(){

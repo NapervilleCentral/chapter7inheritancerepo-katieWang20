@@ -18,7 +18,7 @@ public class Dog extends Pet
         // initialise instance variables
         super(name);
         this.weight = weight;
-        
+        species = "dog";
     }
 
     public String speak(){
