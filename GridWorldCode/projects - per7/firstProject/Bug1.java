@@ -46,7 +46,7 @@ public class Bug1 extends Actor1
     }
 
     /**
-     * Moves if it can move, turns otherwise.
+     * Moves if it can move, turns otherwise        .
      */
     public void act()
     {
@@ -68,6 +68,7 @@ public class Bug1 extends Actor1
      * Moves the bug forward, putting a flower into the location it previously
      * occupied.
      */
+    //directions - integers
     public void move()
     {
         Grid<Actor1> gr = getGrid();

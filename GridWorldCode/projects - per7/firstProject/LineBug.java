@@ -1,45 +1,52 @@
 
 /**
- * Write a description of class ChildBug here.
+ * Write a description of class LineBug here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
+
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.Location;
 import info.gridworld.actor.*;
 
 import java.awt.Color;
 
-public class ChildBug extends Bug
+public class LineBug extends Bug
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class ChildBug
+     * Constructor for objects of class LineBug
      */
-    public ChildBug()
+    public LineBug()
     {
-        setColor(Color.YELLOW);
+        // initialise instance variables
+        setColor(new Color (135, 206, 235));
     }
+
+
     public void act()
     {
         if (canMove()){
             move();
         }else{
+            //setDirection(getDirection()); //+ Location.HALF_RIGHT);
+            turn();
+            turn();
             turn();
             turn();
             //turn();
         }
     }
-    public void move()
+    /*public void move()
     {
         Grid<Actor> gr = getGrid();
         if (gr == null)
             return;
         Location loc = getLocation();
-        Location next = loc.getAdjacentLocation(getDirection()-180);
+        Location next = loc.getAdjacentLocation(getDirection());
         if (gr.isValid(next))
             moveTo(next);
         else
@@ -47,5 +54,5 @@ public class ChildBug extends Bug
         Flower flower = new Flower(getColor());
         flower.putSelfInGrid(gr, loc);
     }
-
+    */
 }
