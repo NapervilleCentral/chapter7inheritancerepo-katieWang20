@@ -29,7 +29,7 @@ public class ChildBug extends Bug
             move();
         }else{
             turn();
-            turn();
+            
             //turn();
         }
     }
@@ -39,7 +39,7 @@ public class ChildBug extends Bug
         if (gr == null)
             return;
         Location loc = getLocation();
-        Location next = loc.getAdjacentLocation(getDirection()-180);
+        Location next = loc.getAdjacentLocation(getDirection());
         if (gr.isValid(next))
             moveTo(next);
         else
