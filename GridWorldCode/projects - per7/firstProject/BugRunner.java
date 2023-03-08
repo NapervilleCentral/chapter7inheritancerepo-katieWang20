@@ -27,7 +27,7 @@ import info.gridworld.actor.Rock;
  * BoxBugRunner (in the boxBug folder) for an example. <br />
  * This class is not tested on the AP CS A and AB exams.
  */
-public class bugRunner
+public class BugRunner
 
 {
     public static void main(String[] args)
@@ -36,10 +36,14 @@ public class bugRunner
         //world.add(new ChildBug());
         
         
-        world.add(new SpiralBug());
+        //world.add(new SpiralBug());
         //world.add(new Bug());
-        world.add(new Rock());
+        //world.add(new Rock());
         //world.add(new LineBug());
+        world.add(new ZBug(20));
+        
         world.show();
+        
+        
     }
 }

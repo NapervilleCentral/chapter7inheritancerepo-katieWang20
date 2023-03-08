@@ -25,9 +25,8 @@ public class SpiralBug extends Bug
 
     public void act()
     {
-        //int count = 0;
-        int a = 0;
-        if (canMove()){
+        
+        if (canMove() && a < length){
             //int a = 0;
             /*
             for (int i = 0; i < length; i ++){
@@ -35,26 +34,27 @@ public class SpiralBug extends Bug
                move();
             }
             */
-            
-               if (a < length){
-                move();
-            //    a++;
-           // }
-           // a = 0;
+           
             //increase side length every time you turn
            
-            }
-            a = 0;
-             turn();
-            turn();
-            length ++;
+            //if (a < length){
+            //    move();
+            //    a++;
+            //}    
+            //a = 0;
+             //turn();
+            //turn();
+            //length ++;
+            move();
+            a++;
         }else{
             //setDirection(getDirection()); //+ Location.HALF_RIGHT);
-            //turn();
-            //turn();
+            turn();
+            turn();
             //turn();
             
-            turn();
+            a = 0;
+            length++;
             //turn();
             
         }
