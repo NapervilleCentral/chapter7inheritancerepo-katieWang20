@@ -27,35 +27,18 @@ public class SpiralBug extends Bug
     {
         
         if (canMove() && a < length){
-            //int a = 0;
-            /*
-            for (int i = 0; i < length; i ++){
-                
-               move();
-            }
-            */
-           
-            //increase side length every time you turn
-           
-            //if (a < length){
-            //    move();
-            //    a++;
-            //}    
-            //a = 0;
-             //turn();
-            //turn();
-            //length ++;
+            
             move();
             a++;
         }else{
-            //setDirection(getDirection()); //+ Location.HALF_RIGHT);
+            
             turn();
             turn();
-            //turn();
+          
             
             a = 0;
             length++;
-            //turn();
+           
             
         }
     }

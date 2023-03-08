@@ -16,8 +16,9 @@ public class ZBug extends Bug
     // instance variables - replace the example below with your own
     private int length;
     private Location location;
-    private int eastCount = 0;
+    //private int eastCount = 0;
     private int stepCount = 0;
+    private int changeCount = 0;
     /**
      * Constructor for objects of class ZBug
      */
@@ -31,17 +32,18 @@ public class ZBug extends Bug
     }
 
     
-    public void move(){
+    public void act(){
         
-        if (canMove() && stepCount < length/3){
+        if (canMove() && stepCount < length && changeCount < 3) {
             move();
             stepCount ++;
         }else{
-            if (getDirection() == Location.EAST){
+            if (getDirection() == Location.EAST && changeCount < 3){
                 setDirection(Location.SOUTHWEST);
-                eastCount ++;
-            }else if (getDirection() == Location.SOUTHWEST){
+                changeCount++;
+            }else if (getDirection() == Location.SOUTHWEST && changeCount < 3){
                 setDirection(Location.EAST);
+                changeCount ++;
             }
             stepCount = 0;
             

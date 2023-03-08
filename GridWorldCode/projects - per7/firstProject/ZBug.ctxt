@@ -4,5 +4,5 @@ comment1.params=length
 comment1.target=ZBug(int)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ZBug\r\n
 comment2.params=
-comment2.target=void\ move()
+comment2.target=void\ act()
 numComments=3

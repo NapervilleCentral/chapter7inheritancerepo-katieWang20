@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=DancingBug
+comment1.params=array
+comment1.target=DancingBug(int[])
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DancingBug\r\n
+comment2.params=
+comment2.target=void\ act()
+numComments=3

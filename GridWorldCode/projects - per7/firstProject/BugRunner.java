@@ -32,6 +32,8 @@ public class BugRunner
 {
     public static void main(String[] args)
     {
+        int[] array = {2, 3, 6, 1, 10};
+        
         ActorWorld world = new ActorWorld();
         //world.add(new ChildBug());
         
@@ -39,8 +41,10 @@ public class BugRunner
         //world.add(new SpiralBug());
         //world.add(new Bug());
         //world.add(new Rock());
-        //world.add(new LineBug());
-        world.add(new ZBug(20));
+        
+        //world.add(new ZBug(5));
+        
+        world.add(new WBug());
         
         world.show();
         
