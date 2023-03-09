@@ -20,6 +20,7 @@ public class DancingBug extends Bug
     private int index= 0;
     private int steps = 0;
     int numOfTurns = 0;
+    
     /**
      * Constructor for objects of class DancingBug
      */
@@ -31,17 +32,25 @@ public class DancingBug extends Bug
 
     public void act(){
         
-        if (canMove() && steps < 5) {
+        if (canMove() && steps < 5 && index < array.length) {
             move();
             
             numOfTurns = 0;
-        }else if (!canMove() && index < array.length && numOfTurns < array[index]){
             
+            steps++;
+        }else if (index < array.length && numOfTurns < array[index]){
+            turn();
+            numOfTurns++;
             
-            
+            //steps = 0;
         }else{
-        index++;    
+            index++;    
+            steps = 0;
+            //numOfTurns = 0;
+            //steps = 0;
         }
+        
+        
         
         
     }
