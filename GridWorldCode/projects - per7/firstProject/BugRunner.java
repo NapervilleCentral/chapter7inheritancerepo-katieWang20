@@ -32,7 +32,7 @@ public class BugRunner
 {
     public static void main(String[] args)
     {
-        int[] array = {2, 9, 6, 1, 10, 13, 1, 6, 48, 10, 7, 34, 78, 7, 14, 20, 1, 24, 10, 12, 6, 29, 4, 56};
+        int[] array = {2, 9, 6, 1, 10, 13, 19, 6, 48, 10, 7, 34, 78, 7, 14, 20, 1, 24, 10, 12, 6, 29, 4, 56};
         
         ActorWorld world = new ActorWorld();
         //world.add(new ChildBug());
@@ -45,7 +45,8 @@ public class BugRunner
         //world.add(new ZBug(5));
         
         //world.add(new WBug());
-        world.add(new DancingBug(array));
+        //world.add(new DancingBug(array));
+        world.add(new HoppingBug());   
         world.show();
         
         

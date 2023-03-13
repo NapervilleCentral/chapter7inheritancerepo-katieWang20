@@ -20,6 +20,7 @@ public class DancingBug extends Bug
     private int index= 0;
     private int steps = 0;
     int numOfTurns = 0;
+    int count = 0;
     
     /**
      * Constructor for objects of class DancingBug
@@ -46,8 +47,12 @@ public class DancingBug extends Bug
         }else{
             index++;    
             steps = 0;
-            //numOfTurns = 0;
-            //steps = 0;
+            numOfTurns = 0;
+            steps = 0;
+            if (index == array.length - 1){// && count < 3){
+                index = 0;
+                count++;
+            }
         }
         
         
