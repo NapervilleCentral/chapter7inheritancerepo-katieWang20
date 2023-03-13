@@ -28,6 +28,9 @@ public class HoppingBug extends Bug
     public HoppingBug()
     {
         // initialise instance variables
+        //Location loc = new Location();
+        
+        
         hopLen = 3;
     }
     //dont let the bug noclip out of the walls
